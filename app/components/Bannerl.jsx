@@ -15,18 +15,24 @@ export const Bannerl = ({ courseslist }) => {
     const datadays = () => {
         dataofdays().then(resp => {
             console.log(resp)
-            setdays(resp.dataOfWeek)
+            setdays(resp.testos)
         })
     }
     return (
         <div>
 
+            <div className=' bg-white rounded-2xl w-4/5 m-auto'>
 
-            <img src={courseslist[0]?.banner.url || null} width={100} height={200} alt='56' />
+                <h3 className=' text-black'></h3>
 
-            {days.map((item, index) => (
-                <li key={index}>{item.nameOfTheDay}</li>
-            ))} 
+                {days.map((item, index) => (
+                    <li key={index} className=' text-black font-rakkas text-5xl m-4 p-3'>{item.sectionname}</li>
+                ))}
+
+            </div>
+
+
+
 
 
         </div>

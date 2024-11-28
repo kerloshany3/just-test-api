@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div>
-      <img src={banner} width={100} height={200} alt="kero" />
+
       <h2 className=" text-rose font-arabicUI">كورسات </h2>
       <Bannerl courseslist={courseslist}></Bannerl>
       <h4 className=" text-white text-5xl bg-red-500 rounded-2xl flex justify-center m-auto">

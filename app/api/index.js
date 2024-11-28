@@ -23,12 +23,16 @@ export const getCourseData = async () => {
 export const dataofdays = async () => {
     const query2 = gql`
 
+   
     query dataofmnu {
-  dataOfWeek {
-    nameOfTheDay
+  testos {
+    numofweek
+    numberofsection
+    nameofbulding
+    sectionname
   }
 }
-  
+
 `
     const resultdays = await request(MASTER_URL, query2)
     return resultdays;
