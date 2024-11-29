@@ -30,6 +30,7 @@ export const dataofdays = async () => {
     numberofsection
     nameofbulding
     sectionname
+    id
   }
 }
 
