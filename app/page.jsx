@@ -23,9 +23,7 @@ export default function Home() {
     })
   }
 
-  const banner = courseslist[0]?.banner.url
-
-
+ 
 
   return (
     <div className="selection:bg-black selection:text-white">
@@ -45,13 +43,7 @@ export default function Home() {
         {courseslist[0]?.description}</h4>
 
 
-      <AuroraBackgroundDemo></AuroraBackgroundDemo>
-
       
-
-      <div className=" flex justify-center">
-      </div>
-
 
 
       
